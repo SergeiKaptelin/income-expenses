@@ -1,0 +1,116 @@
+@import '../base/variables';
+
+// Classes to hide content in certain media
+
+// Mobile
+.hide-xs {
+  @media (max-width: $tablet - 1) {
+    display: none !important;
+  }
+}
+
+.show-xs {
+  @media (min-width: $tablet) {
+    display: none !important;
+  }
+}
+
+// Tablet
+.hide-sm-down {
+  @media (max-width: $tablet - 1) {
+    display: none !important;
+  }
+}
+
+.hide-sm {
+  @media (min-width: $tablet) and (max-width: $laptop - 1) {
+    display: none !important;
+  }
+}
+
+.hide-sm-up {
+  @media (min-width: $tablet) {
+    display: none !important;
+  }
+}
+
+.show-sm {
+  @media (max-width: $tablet - 1) {
+    display: none !important;
+  }
+
+  @media (min-width: $laptop) {
+    display: none !important;
+  }
+}
+
+// Laptop
+.hide-md-down {
+  @media (max-width: $laptop - 1) {
+    display: none !important;
+  }
+}
+
+.hide-md {
+  @media (min-width: $laptop) and (max-width: $desktop - 1) {
+    display: none !important;
+  }
+}
+
+.hide-md-up {
+  @media (min-width: $laptop) {
+    display: none !important;
+  }
+}
+
+.show-md {
+  @media (max-width: $laptop - 1) {
+    display: none !important;
+  }
+
+  @media (min-width: $desktop) {
+    display: none !important;
+  }
+}
+
+// Desktop
+.hide-lg-down {
+  @media (max-width: $desktop - 1) {
+    display: none !important;
+  }
+}
+
+.hide-lg {
+  @media (min-width: $desktop) and (max-width: $largeDesktop - 1) {
+    display: none !important;
+  }
+}
+
+.hide-lg-up {
+  @media (min-width: $desktop) {
+    display: none !important;
+  }
+}
+
+.show-lg {
+  @media (max-width: $desktop - 1) {
+    display: none !important;
+  }
+
+  @media (min-width: $largeDesktop) {
+    display: none !important;
+  }
+}
+
+// Large desktop
+.hide-xl-down {
+  @media (max-width: $largeDesktop - 1) {
+    display: none !important;
+  }
+}
+
+.hide-xl-up {
+  @media (min-width: $largeDesktop) {
+    display: none !important;
+  }
+}

@@ -1,0 +1,14 @@
+:local {
+  .Layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .Content {
+    position: relative;
+    padding: 0;
+    flex: 1;
+  }
+}

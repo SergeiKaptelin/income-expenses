@@ -1,0 +1,13 @@
+@mixin background-image-retina($bg-img-src, $bg-img-retina-src) {
+  background-image: url(#{$bg-img-src});
+  background-image:
+    -webkit-image-set(
+      url(#{$bg-img-src}) 1x,
+      url($bg-img-retina-src) 2x
+    );
+  background-image:
+    image-set(
+      url(#{$bg-img-src}) 1x,
+      url($bg-img-retina-src) 2x
+    );
+}
