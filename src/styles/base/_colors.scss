@@ -1,6 +1,10 @@
 $app-colors: (
   'white'         : #ffffff,
   'black'         : #000000,
+  'grey-900'      : #324c5b,
+  'green-500'     : #2dba75,
+  'green-550'     : #12c48b,
+  'red-400'       : #f14c52
 );
 
 @function col($color) {

@@ -1,4 +1,5 @@
 @import "../../styles/base/variables";
+@import "../../styles/base/colors";
 
 :local {
   $header-height: 60px;
@@ -11,6 +12,7 @@
     right: 0;
     z-index: 11;
     height: $header-height;
+    margin-bottom: 60px;
   }
 
   .HeaderContent {
@@ -80,13 +82,13 @@
         text-decoration: none;
 
         &:hover {
-          color: #12c48b;
+          color: col(green-550);
         }
       }
 
       .NavItemActive {
-        border-bottom-color: #12c48b;
-        color: #12c48b;
+        border-bottom-color: col(green-550);
+        color: col(green-550);
       }
     }
   }
