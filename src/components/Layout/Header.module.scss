@@ -1,0 +1,174 @@
+@import "../../styles/base/variables";
+
+:local {
+  $header-height: 60px;
+
+  .HeaderWrapper {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    height: $header-height;
+  }
+
+  .HeaderContent {
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+    border-bottom: solid 1px #e5ebee;
+    box-shadow: 0 4px 8px 0 rgba(48, 82, 120, .03);
+  }
+
+  .LogoWrapper {
+    padding-left: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+
+    .LogoItem {
+      padding: 0 5px;
+    }
+
+    .ArrowRight {
+      color: #93a1aa;
+    }
+  }
+
+  .WalletName {
+    font-weight: bold;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    color: #324c5b;
+    font-size: 16px;
+    margin-right: 8px;
+    display: inline-block;
+    max-width: calc(25vw - 104px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .MenuWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+    .ListBlock {
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      .NavItem {
+        display: inline-block;
+        padding: 0 24px;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: .2s color ease-in-out;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #7b93a4;
+        border-bottom: 3px solid transparent;
+        line-height: 58px;
+        vertical-align: middle;
+        text-decoration: none;
+
+        &:hover {
+          color: #12c48b;
+        }
+      }
+
+      .NavItemActive {
+        border-bottom-color: #12c48b;
+        color: #12c48b;
+      }
+    }
+  }
+
+  .NavItemText {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .AccountWrapper {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+
+    .Circle {
+      width: 34px;
+      height: 34px;
+      background-color: #eee;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    .AccountName {
+      display: block;
+      margin-left: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .NavItemImage {
+    display: none;
+  }
+
+  @media (max-width: $tablet - 1) {
+    .WalletName {
+      max-width: unset;
+    }
+
+    .MenuWrapper {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      border-top: 1px solid #e5ebee;
+      -webkit-box-shadow: 0 -4px 8px 0 rgba(48, 82, 120, .03);
+      box-shadow: 0 -4px 8px 0 rgba(48, 82, 120, .03);
+      min-height: 50px;
+
+      .ListBlock {
+        height: 54px;
+
+        .NavItem {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 100%;
+          justify-content: space-around;
+        }
+      }
+    }
+
+    .AccountWrapper {
+      .AccountName {
+        display: none;
+      }
+    }
+
+    .NavItemText {
+      line-height: 1em;
+      font-size: 12px;
+    }
+
+    .NavItemImage {
+      display: flex;
+    }
+  }
+}

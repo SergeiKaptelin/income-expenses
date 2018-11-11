@@ -1,0 +1,8 @@
+$app-colors: (
+  'white'         : #ffffff,
+  'black'         : #000000,
+);
+
+@function col($color) {
+  @return map-get($app-colors, $color)
+}

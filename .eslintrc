@@ -1,0 +1,72 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/all",
+    "plugin:jsx-a11y/recommended",
+    "google"
+  ],
+  "settings": {
+    "react": {
+      "version": "16.6.0"
+    }
+  },
+  "plugins": [
+    "babel",
+    "promise",
+    "react",
+    "jsx-a11y"
+  ],
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "rules": {
+    "switch-colon-spacing": 0,
+    "func-call-spacing": 0,
+    "max-len": [2, 120, 2, { "ignoreStrings": true }],
+    "new-cap": 0,
+    "no-invalid-this": 0,
+    "no-console": 0, // FIXME
+    "no-case-declarations": 0, // FIXME
+    "react/no-string-refs": 0, // FIXME
+    "react/no-did-update-set-state": 0, // FIXME
+    "jsx-a11y/click-events-have-key-events": 0, // FIXME
+    "jsx-a11y/no-noninteractive-element-interactions": 0, // FIXME
+    "react/prefer-stateless-function": 0, // FIXME
+    "jsx-a11y/label-has-for": 0,
+    "require-jsdoc": 0,
+    "react/jsx-tag-spacing": 0,
+    "react/forbid-component-props": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-indent": [2, 2],
+    "react/jsx-indent-props": [2, 2],
+    "react/jsx-max-props-per-line": [2, {
+      "maximum": 1,
+      "when": "multiline"
+    }],
+    "react/jsx-no-bind": [2, {
+      "ignoreRefs": true,
+      "allowArrowFunctions": true
+    }],
+    "react/jsx-no-literals": 0,
+    "react/jsx-sort-props": 0,
+    "react/no-set-state": 0,
+    "react/require-optimization": 0,
+    "quotes": [2, "double"],
+    "no-debugger": 0,
+    "react/destructuring-assignment": 0,
+    "react/no-access-state-in-setstate": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "jsx-a11y/no-autofocus": 0,
+    "react/jsx-max-depth": 0,
+    "react/sort-comp": 0,
+    "space-before-function-paren": 0,
+    "indent": [2, 2],
+    "react/jsx-pascal-case": [2, {
+      "allowAllCaps": true
+    }]
+  }
+}

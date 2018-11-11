@@ -1,0 +1,40 @@
+@import "../../styles/base/variables";
+
+:local {
+  .Footer {
+    border-top: solid 1px #e5ebee;
+    box-shadow: 0 4px 8px 0 rgba(48, 82, 120, 0.03);
+    padding: 15px 0;
+    display: block;
+
+    @media (max-width: $tablet - 1) {
+      display: none;
+    }
+  }
+
+  .Creator {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Link {
+    text-decoration: none;
+    color: #009999;
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      color: #46c2c7;
+    }
+  }
+
+  .Rectangle {
+    width: 1px;
+    height: 25px;
+    background-color: #7b93a4;
+    margin: 0 10px;
+    display: inline-block;
+  }
+}
