@@ -1,0 +1,33 @@
+@import "../../styles/base/colors";
+
+:local {
+  .StatsBlock {
+    padding: 12px 15px;
+    background-color: col('white');
+    border-radius: 8px;
+
+    .Title {
+      font-size: 14px;
+      color: col(grey-900);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .Price {
+      line-height: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 24px;
+      color: col(grey-900);
+
+      &.Positive {
+        color: col(green-500);
+      }
+
+      &.Negative {
+        color: col(red-400)
+      }
+    }
+  }
+}
