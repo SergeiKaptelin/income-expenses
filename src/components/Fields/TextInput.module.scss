@@ -1,0 +1,37 @@
+@import "../../styles/base/variables";
+@import "../../styles/base/colors";
+
+:local {
+  .Wrap {
+    min-height: 78px;
+    margin-bottom: 10px;
+  }
+
+  .Label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: col('grey-500');
+  }
+
+  .Field {
+    display: block;
+    width: 100%;
+    border: 1px solid #e5ebee;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+    padding: 0 8px;
+    margin-bottom: 4px;
+    transition: border-color .2s ease-in-out;
+    height: 36px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      border-color: #bbcdd8;
+    }
+  }
+}

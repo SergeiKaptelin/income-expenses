@@ -10,6 +10,14 @@
     }
   }
 
+  .ControlsWrap {
+    margin-bottom: 15px;
+  }
+
+  .ButtonText {
+    margin-left: 10px;
+  }
+
   .EmptyPeriod {
     display: flex;
     align-items: center;
@@ -23,5 +31,27 @@
       margin-top: 16px;
       color: #7b93a4;
     }
+  }
+
+  .ModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .4);
+  }
+
+  .Modal {
+    top: 30%;
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    outline: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 0 auto;
+    max-width: 800px;
+    position: relative;
   }
 }

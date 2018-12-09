@@ -4,17 +4,21 @@ import {routerReducer} from "react-router-redux";
 import thunk from "redux-thunk";
 
 import * as reducers from "../reducers/index";
+import transactionReducer from "../reducers/TransactionReducer";
+
+const win = window || {};
 
 const enhancer = compose(
   applyMiddleware(
     thunk,
   ),
-  window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : (f) => f,
+  win.__REDUX_DEVTOOLS_EXTENSION__ ? win.__REDUX_DEVTOOLS_EXTENSION__() : (f) => f,
 );
 
 const reducer = combineReducers({
   ...reducers,
   form: reduxFormReducer.plugin({
+    addTransactionForm: transactionReducer,
   }),
   routing: routerReducer,
 });
