@@ -64,7 +64,9 @@
     "react/jsx-max-depth": 0,
     "react/sort-comp": 0,
     "space-before-function-paren": 0,
-    "indent": [2, 2],
+    "indent": [2, 2, {
+      "SwitchCase": 1
+    }],
     "react/jsx-pascal-case": [2, {
       "allowAllCaps": true
     }]

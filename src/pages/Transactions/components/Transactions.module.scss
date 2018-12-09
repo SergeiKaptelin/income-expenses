@@ -3,6 +3,7 @@
 :local {
   .Container {
     margin: 0 auto;
+    padding: 0 15px;
 
     @media (min-width: $desktop) {
       width: 1140px;
